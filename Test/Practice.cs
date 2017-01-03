@@ -56,7 +56,7 @@ namespace Practice
             //Verify "create an account" text appears on page 
             StringAssert.AreEqualIgnoringCase("create an account", createForm.Text);
             //Enter email address
-            signInPage.EmailCreateId.SendKeys("mypracticetest1@mypractice.com");
+            signInPage.EmailCreateId.SendKeys("mypracti1cetest1@mypractice.com");
             //ckick the submit buttton
             signInPage.Submitbtn.Click();
 
@@ -73,7 +73,7 @@ namespace Practice
                 regPage.CustomerFirstName.SendKeys("Johnny");
                 regPage.CustomerLastName.SendKeys("Smith");
                 regPage.Email.Clear();
-                regPage.Email.SendKeys("mypracticetest1@mypractice.com");
+                regPage.Email.SendKeys("mypract1icetest1@mypractice.com");
                 regPage.Password.SendKeys("54321");
                 regPage.Dateofbirth.Click();
                 regPage.Monthofbirth.Click();
