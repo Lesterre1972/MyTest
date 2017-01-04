@@ -40,10 +40,7 @@ namespace Practice
         {
             //Home page
             var homePage = new HomePageObject(driver);
-            driver.Manage().Window.Maximize();
-            //Browser waits for 10 seconds
-            driver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(5));
-
+          
             //Click on sign in link on upper right of home page
             homePage.SignIn.Click();
 
@@ -56,7 +53,7 @@ namespace Practice
             //Verify "create an account" text appears on page 
             StringAssert.AreEqualIgnoringCase("create an account", createForm.Text);
             //Enter email address
-            signInPage.EmailCreateId.SendKeys("mypracti1cetest1@mypractice.com");
+            signInPage.EmailCreateId.SendKeys("mypracti1ddddddcetest1@mypractice.com");
             //ckick the submit buttton
             signInPage.Submitbtn.Click();
 
@@ -73,7 +70,7 @@ namespace Practice
                 regPage.CustomerFirstName.SendKeys("Johnny");
                 regPage.CustomerLastName.SendKeys("Smith");
                 regPage.Email.Clear();
-                regPage.Email.SendKeys("mypract1icetest1@mypractice.com");
+                regPage.Email.SendKeys("mypract1idddddddcetest1@mypractice.com");
                 regPage.Password.SendKeys("54321");
                 regPage.Dateofbirth.Click();
                 regPage.Monthofbirth.Click();
